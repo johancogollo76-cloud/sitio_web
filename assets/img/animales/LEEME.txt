@@ -1,0 +1,9 @@
+Pon aquí las fotos o ilustraciones de los 5 animales con estos nombres exactos:
+
+  dodo.jpg
+  tilacino.jpg
+  mamut.jpg
+  smilodon.jpg
+  paloma.jpg
+
+Mientras no estén, la página muestra el emoji y el nombre de cada animal.
