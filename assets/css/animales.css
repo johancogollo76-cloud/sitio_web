@@ -20,11 +20,13 @@
   align-items: center;
   justify-content: center;
 }
+
 .hero .hero-orb .vr-center {
   font-size: clamp(4.5rem, 12vw, 8rem);
   line-height: 1;
   filter: drop-shadow(0 8px 20px rgba(0, 0, 0, .5));
 }
+
 .hero .hero-orb .bubble {
   position: absolute;
   width: 76px;
@@ -39,17 +41,55 @@
   box-shadow: 0 8px 22px rgba(0, 0, 0, .35);
   animation: bob 4s ease-in-out infinite;
 }
-.hero .hero-orb .b1 { top: 4%;  left: 42%; animation-delay: 0s; }
-.hero .hero-orb .b2 { top: 28%; right: 0;  animation-delay: .6s; }
-.hero .hero-orb .b3 { bottom: 2%; left: 46%; animation-delay: 1.2s; }
-.hero .hero-orb .b4 { bottom: 8%; left: 14%;  animation-delay: 1.8s; }
-.hero .hero-orb .b5 { top: 28%; left: 0;   animation-delay: 2.4s; }
-@keyframes bob {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
+
+.hero .hero-orb .b1 {
+  top: 4%;
+  left: 42%;
+  animation-delay: 0s;
 }
+
+.hero .hero-orb .b2 {
+  top: 28%;
+  right: 0;
+  animation-delay: .6s;
+}
+
+.hero .hero-orb .b3 {
+  bottom: 2%;
+  left: 46%;
+  animation-delay: 1.2s;
+}
+
+.hero .hero-orb .b4 {
+  bottom: 8%;
+  left: 14%;
+  animation-delay: 1.8s;
+}
+
+.hero .hero-orb .b5 {
+  top: 28%;
+  left: 0;
+  animation-delay: 2.4s;
+}
+
+@keyframes bob {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
 @media (max-width: 480px) {
-  .hero .hero-orb .bubble { width: 58px; height: 58px; font-size: 1.7rem; }
+  .hero .hero-orb .bubble {
+    width: 58px;
+    height: 58px;
+    font-size: 1.7rem;
+  }
 }
 
 /* El proyecto: panel con gafas VR */
@@ -68,9 +108,22 @@
     linear-gradient(160deg, #15303c, #07151d);
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 88%);
 }
-.about .vr-panel .big { font-size: 7rem; line-height: 1; }
-.about .vr-panel p { margin: 1rem 0 0; color: var(--heading-color); font-weight: 600; }
-.about .about-image { position: relative; overflow: visible; }
+
+.about .vr-panel .big {
+  font-size: 7rem;
+  line-height: 1;
+}
+
+.about .vr-panel p {
+  margin: 1rem 0 0;
+  color: var(--heading-color);
+  font-weight: 600;
+}
+
+.about .about-image {
+  position: relative;
+  overflow: visible;
+}
 
 /* Tarjetas de animales */
 .animales .animal-card {
@@ -81,12 +134,14 @@
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
   box-shadow: 0 12px 34px rgba(0, 0, 0, .28);
 }
+
 .animales .animal-photo {
   position: relative;
   height: 100%;
   min-height: 360px;
   background: radial-gradient(circle at 30% 20%, #1d3a46, #06141b);
 }
+
 .animales .animal-photo img {
   position: absolute;
   inset: 0;
@@ -94,6 +149,7 @@
   height: 100%;
   object-fit: cover;
 }
+
 .animales .animal-photo .fb {
   position: absolute;
   inset: 0;
@@ -105,13 +161,18 @@
   font-size: 6.5rem;
   line-height: 1.1;
 }
+
 .animales .animal-photo .fb small {
   font-size: .85rem;
   padding: 0 24px;
   margin-top: 10px;
   color: color-mix(in srgb, var(--default-color), transparent 35%);
 }
-.animales .animal-body { padding: 34px 34px 30px; }
+
+.animales .animal-body {
+  padding: 34px 34px 30px;
+}
+
 .animales .tag-extinto {
   display: inline-block;
   background: #c62828;
@@ -122,18 +183,21 @@
   padding: 3px 12px;
   border-radius: 99px;
 }
+
 .animales .animal-body h3 {
   font-size: 1.9rem;
   font-weight: 700;
   margin: 10px 0 2px;
   color: var(--heading-color);
 }
+
 .animales .animal-body .sci {
   display: block;
   font-style: italic;
   font-size: .92rem;
   color: color-mix(in srgb, var(--default-color), transparent 35%);
 }
+
 .animales .animal-body .hace {
   font-family: var(--heading-font);
   font-size: 1.7rem;
@@ -141,6 +205,7 @@
   color: var(--accent-color);
   margin: 12px 0 6px;
 }
+
 .animales .animal-info h4 {
   display: flex;
   align-items: center;
@@ -150,10 +215,16 @@
   margin: 16px 0 4px;
   color: var(--accent-color);
 }
-.animales .animal-info p { margin: 0; }
+
+.animales .animal-info p {
+  margin: 0;
+}
 
 /* Línea de tiempo: etiqueta de animal dentro del paso */
-.steps .step-info .step-animal { font-size: 1.6rem; margin-right: 6px; }
+.steps .step-info .step-animal {
+  font-size: 1.6rem;
+  margin-right: 6px;
+}
 
 /* Cuidemos la fauna */
 .call-to-action .vr-panel-cta {
@@ -169,5 +240,11 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .hero .hero-orb .bubble { animation: none; }
+  .hero .hero-orb .bubble {
+    animation: none;
+  }
+}
+
+.animales .animal-photo img.pos-tilacino {
+  object-position: 30% 30%;
 }
